@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .flex-row {
+        display: flex;
+        justify-content: space-between;
+        background-color: antiquewhite;
+        height: 300px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      .g {
+        background: green;
+      }
+      .b {
+        background: blue;
+      }
+      .r {
+        background: red;
+      }
+      h1 {
+        text-align: center;
+      }
+      .centerd {
+        background-color: rgb(111, 122, 122);
+        justify-content: center;
+        align-items: center;
+      }
+      .bottom-right {
+        background-color: rgb(134, 204, 204);
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+      .col-left {
+        background-color: rgb(203, 209, 162);
+        flex-direction: column;
+        justify-content: space-around;
+        height: 400px;
+      }
+    </style>
+    <title>15.1,15.2,15.3,15.4-flex_basics</title>
+  </head>
+  <body>
+    <h1>15.1</h1>
+    <div class="flex-row">
+      <div class="box g">1</div>
+      <div class="box b">2</div>
+      <div class="box r">3</div>
+    </div>
+    <h1>15.2</h1>
+    <div class="flex-row centerd">
+      <div class="box g">1</div>
+      <div class="box b">2</div>
+      <div class="box r">3</div>
+    </div>
+    <h1>15.3</h1>
+    <div class="flex-row bottom-right">
+      <div class="box g">1</div>
+      <div class="box b">2</div>
+      <div class="box r">3</div>
+    </div>
+    <h1>15.4</h1>
+    <div class="flex-row col-left">
+      <div class="box g">1</div>
+      <div class="box b">2</div>
+      <div class="box r">3</div>
+    </div>
+  </body>
+</html>

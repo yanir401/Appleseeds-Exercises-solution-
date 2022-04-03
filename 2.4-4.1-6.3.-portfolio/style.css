@@ -1,0 +1,177 @@
+:root {
+  --primary-color: #bba68f;
+  --light-color: #f1ede9;
+  --dark-color: #25211d;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+}
+
+p {
+  line-height: 1.8;
+}
+i {
+  margin: 0 25px;
+}
+a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+header {
+  text-align: center;
+  background-color: #bba68f;
+  margin-bottom: 3rem;
+}
+
+nav {
+  background-color: var(--dark-color);
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  transition: all 0.35s;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+nav ul li a:hover {
+  color: var(--primary-color);
+}
+h1 {
+  margin-bottom: 10px;
+  padding-top: 20px;
+  font-size: 48px;
+}
+h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+.image-box {
+  margin: 2rem 0;
+  padding-bottom: 1rem;
+}
+.about-content {
+  text-align: center;
+}
+
+.card {
+  width: 300px;
+  background-color: var(--primary-color);
+  padding-bottom: 10px;
+  font-family: sans-serif;
+  box-shadow: 0 0 5px;
+  display: inline-block;
+  margin: 0 25px;
+  transition: all 0.3s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card img {
+  width: 100%;
+  height: 400px;
+}
+h3 {
+  margin: 10px;
+}
+.content {
+  padding: 10px;
+}
+.cards-list {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+section {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 0;
+}
+ul {
+  list-style: none;
+}
+li {
+  margin: 10px 0;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+.icons {
+  text-align: center;
+}
+
+.fab {
+  color: var(--dark-color);
+}
+.fa-facebook {
+  color: #4267b2;
+}
+.fa-instagram {
+  color: transparent;
+  background: -webkit-radial-gradient(
+    30% 107%,
+    circle,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -o-radial-gradient(
+    30% 107%,
+    circle,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.fa-linkedin {
+  color: #2867b2;
+}
+header img {
+  border-radius: 50%;
+  width: 250px;
+  border: 2px solid var(--primary-color);
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--primary-color);
+}

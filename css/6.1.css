@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 10px 5px;
+}
+.thin-border {
+  font-size: 24px;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+.fontStyle {
+  font-style: italic;
+  font-weight: bold;
+}
+.backFontWhite {
+  box-shadow: 7px 7px 7px 7px rgb(158, 158, 158);
+
+  background-color: black;
+  color: #fff;
+}

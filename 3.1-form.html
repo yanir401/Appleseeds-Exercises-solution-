@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>3.1 form</title>
+  </head>
+  <style>
+    html {
+      font-size: 18px;
+      font-family: "Nunito", sans-serif;
+    }
+  </style>
+  <body>
+    <h1>Create an Account</h1>
+    <form>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+      </div>
+      <br />
+      <div>
+        <label for="age">Age:</label>
+        <select name="age" id="age">
+          <option value="" disabled selected>Select your age</option>
+
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <br />
+
+      <div>
+        <div>
+          <label for="aboutYou">Tell us a little about yourself:</label>
+        </div>
+        <textarea id="aboutYou" name="aboutYou" rows="4" cols="50"> </textarea>
+      </div>
+
+      <div>
+        <input type="checkbox" id="terms" name="terms" />
+
+        <label for="terms"
+          >I agree to the <a href="">terms of service</a>
+        </label>
+      </div>
+      <br />
+      <div>
+        <button type="submit">Sign Up</button>
+        <button type="reset">Clear</button>
+      </div>
+    </form>
+  </body>
+</html>
