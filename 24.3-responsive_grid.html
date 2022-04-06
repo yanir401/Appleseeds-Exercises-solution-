@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .grid {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "sidebar contenti sidebar2"
+          "footer footer footer";
+        gap: 1rem;
+        font-size: 20px;
+        color: #222;
+      }
+      .box {
+        padding: 2rem;
+        border-radius: 10px;
+      }
+      .box:nth-child(1) {
+        background-color: rgb(252, 152, 134);
+      }
+      .box:nth-child(2) {
+        background-color: rgb(132, 255, 110);
+      }
+      .box:nth-child(3) {
+        background-color: rgb(134, 162, 252);
+      }
+      .box:nth-child(4) {
+        background-color: rgb(195, 134, 252);
+      }
+      .box:nth-child(5) {
+        background-color: rgb(230, 252, 134);
+      }
+
+      .header {
+        grid-area: header;
+      }
+      .sidebar {
+        grid-area: sidebar;
+      }
+      .content {
+        grid-area: contenti;
+      }
+      .sidebar2 {
+        grid-area: sidebar2;
+      }
+
+      .footer {
+        grid-area: footer;
+      }
+
+      @media (max-width: 800px) {
+        .grid {
+          grid-template-areas:
+            "header header header"
+            "sidebar contenti contenti"
+            "sidebar2 sidebar2 sidebar2"
+            "footer footer footer";
+        }
+      }
+      @media (max-width: 490px) {
+        .grid {
+          grid-template-areas:
+            "header"
+            "sidebar"
+            "contenti"
+            "sidebar2"
+            "footer";
+        }
+      }
+    </style>
+    <title>24.3-responsive_grid</title>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="box header">Header</div>
+      <div class="box sidebar">Sidebar</div>
+      <div class="box content">
+        Content <br />More content than we had before so this column is now
+        quite tall
+      </div>
+      <div class="box sidebar2">Siderbar 2</div>
+      <div class="box footer">Footer</div>
+    </div>
+  </body>
+</html>
